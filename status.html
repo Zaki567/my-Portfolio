@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Status | Zaki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Status</h1>
+    <p class="subtitle">Website uptime & service health</p>
+    <div class="buttons">
+      <a class="btn outline" href="index.html">← Back to Home</a>
+      <a class="btn" href="https://zaki567.github.io/my-Portfolio/" target="_blank" rel="noreferrer">Open Website</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Current Status</h2>
+      <p>
+        ✅ <b>Operational</b> — If you can open this page, GitHub Pages is serving content.
+      </p>
+      <p style="opacity:.75;margin-top:8px;">
+        Last updated: <span id="ts"></span>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Monitoring</h2>
+      <p>
+        This site is monitored with an external uptime check. If the main site becomes unavailable,
+        an email alert is triggered.
+      </p>
+      <ul>
+        <li>Monitored URL: <code>https://zaki567.github.io/my-Portfolio/</code></li>
+        <li>Check interval: 5 minutes (typical free plan)</li>
+        <li>Alert: Email</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://www.githubstatus.com/" target="_blank" rel="noreferrer">GitHub Status Page</a></li>
+        <li><a href="contact.html">Contact page</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Zaki</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("ts").textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
