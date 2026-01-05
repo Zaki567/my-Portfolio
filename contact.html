@@ -1,12 +1,48 @@
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <label>Name</label><br>
-  <input name="name" required><br><br>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Zaki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Contact</h1>
+    <p class="subtitle">Send me a message</p>
+    <div class="buttons">
+      <a class="btn outline" href="index.html">← Back to Home</a>
+    </div>
+  </header>
 
-  <label>Email</label><br>
-  <input type="email" name="email" required><br><br>
+  <main class="container">
+    <section class="card">
+      <!-- 1) Replace YOUR_FORM_ID after creating Formspree form -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label><b>Name</b></label><br>
+        <input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin-top:6px;"><br><br>
 
-  <label>Message</label><br>
-  <textarea name="message" rows="5" required></textarea><br><br>
+        <label><b>Email</b></label><br>
+        <input type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin-top:6px;"><br><br>
 
-  <button type="submit">Send</button>
-</form>
+        <label><b>Message</b></label><br>
+        <textarea name="message" rows="6" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin-top:6px;"></textarea><br><br>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <p style="margin-top:14px;opacity:.7;">
+        Tip: Replace <b>YOUR_FORM_ID</b> with your Formspree ID to receive messages.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Zaki</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
