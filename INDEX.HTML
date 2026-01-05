@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zaki | IT Support & Cloud Learner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Zaki</h1>
+    <p class="subtitle">IT Support Specialist • Cloud Learner</p>
+    <div class="buttons">
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn outline" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I’m building hands-on cloud and IT projects. I enjoy networking, troubleshooting,
+        and deploying apps online.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>GitHub Pages Portfolio (Cloud Hosting)</b> — This website is deployed from GitHub.</li>
+        <li><b>Next:</b> Add a custom domain + HTTPS, and a contact form.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/your-username</a></p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Zaki</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

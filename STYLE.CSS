@@ -1,0 +1,11 @@
+:root { font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #111; }
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+header { padding-top: 40px; padding-bottom: 10px; }
+h1 { margin: 0; font-size: 44px; }
+.subtitle { margin: 8px 0 18px; opacity: .75; }
+.card { background: white; border-radius: 14px; padding: 18px 18px; margin: 14px 0; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.buttons { display: flex; gap: 10px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; background: #111; color: white; text-decoration: none; }
+.btn.outline { background: transparent; color: #111; border: 1px solid #111; }
+.footer { opacity: .7; padding-bottom: 40px; }
